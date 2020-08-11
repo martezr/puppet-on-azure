@@ -1,0 +1,11 @@
+parameters:
+  targets:
+    type: TargetSpec
+
+steps:
+  - command: yum -y install epel-release
+    targets: $targets
+    description: "Install epel-release"
+  - command: yum -y install nginx
+    targets: $targets
+    description: "Install nginx"
