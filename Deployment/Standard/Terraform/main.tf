@@ -5,5 +5,5 @@ provider "azurerm" {
 
 resource "azurerm_resource_group" "pe_infrastructure" {
   name     = "puppet_enterprise_resources"
-  location = "Central US"
+  location = var.location
 }
